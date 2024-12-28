@@ -1,12 +1,12 @@
 package com.github.yanggggjie.editorswitcherjetbrains.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
-import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.wm.IdeFrame
 
 internal class MyApplicationActivationListener : ApplicationActivationListener {
 
     override fun applicationActivated(ideFrame: IdeFrame) {
-        thisLogger().warn("Don't forget to remove all non-needed sample code files with their corresponding registration entries in `plugin.xml`.")
+        // 监听 IDE 窗口激活事件
+        // 目前只是输出一条警告日志
     }
 }
