@@ -6,12 +6,16 @@
 
     <depends>com.intellij.modules.platform</depends>
 
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
     <actions>
         <action id="OpenInVSCode" 
                 class="com.github.yanggggjie.editorswitcherjetbrains.actions.OpenInVSCodeAction"
                 text="Open in VSCode" 
-                description="Open current file in Visual Studio Code">
+                description="Open current file in Visual Studio Code"
+                icon="com.github.yanggggjie.editorswitcherjetbrains.icons.PluginIcons.VSCode">
             <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Cut"/>
+            <add-to-group group-id="MainToolbarRight" anchor="first"/>
         </action>
     </actions>
 </idea-plugin>
